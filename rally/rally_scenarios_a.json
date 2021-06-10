@@ -1,8 +1,8 @@
 {% set flavor_name = flavor_name or "m1.tiny_test" %}
 {% set image_name = image_name or "TestCirros-0.4.0" %}
 {% set availability_zone = "nova" %}
-{% set concurrency = 200 %}
-{% set times = 2000 %}
+{% set concurrency = 150 %}
+{% set times = 1000 %}
 {% set users = 20 %}
 {% set tenants = 20 %}
 {
