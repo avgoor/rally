@@ -2,11 +2,11 @@
 {% set image_name = image_name or "TestCirros-0.4.0" %}
 {% set availability_zone = "nova" %}
 {% set concurrency = 80 %}
-{% set times = 400 %}
+{% set times = 3000 %}
 {% set users = 20 %}
 {% set tenants = 20 %}
 {
-  "NovaServers.suspend_and_resume_server": [
+  "NovaServers.boot_server": [
   {
     "args": {
       "flavor": {
