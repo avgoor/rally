@@ -2,7 +2,7 @@
 {% set image_name = image_name or "TestCirros-0.4.0" %}
 {% set availability_zone = "nova" %}
 {% set concurrency = 40 %}
-{% set times = 200 %}
+{% set times = 400 %}
 {% set users = 1 %}
 {% set tenants = 1 %}
 {
