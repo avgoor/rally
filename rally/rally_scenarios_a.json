@@ -3,8 +3,8 @@
 {% set availability_zone = "nova" %}
 {% set concurrency = 300 %}
 {% set times = 3000 %}
-{% set users = 50 %}
-{% set tenants = 50 %}
+{% set users = 1 %}
+{% set tenants = 1 %}
 {
   "NovaServers.boot_server": [
   {
@@ -25,7 +25,7 @@
     },
     "context": {
       "network": {
-        "start_cidr": "100.1.0.0/16",
+        "start_cidr": "100.0.0.0/8",
         "networks_per_tenant": 5,
         "subnets_per_network": 5
       },
