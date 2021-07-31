@@ -1,8 +1,8 @@
 {% set flavor_name = "m1.rmq_test" %}
 {% set image_name = image_name or "TestCirros-0.4.0" %}
 {% set availability_zone = "nova" %}
-{% set concurrency = 10 %}
-{% set times = 7000 %}
+{% set concurrency = 30 %}
+{% set times = 3000 %}
 {% set users = 1 %}
 {% set tenants = 1 %}
 {
