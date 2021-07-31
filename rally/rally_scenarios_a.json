@@ -6,7 +6,7 @@
 {% set users = 1 %}
 {% set tenants = 1 %}
 {
-  "NovaServers.boot_server": [
+  "NovaServers.boot_and_delete_server": [
   {
     "args": {
       "flavor": {
