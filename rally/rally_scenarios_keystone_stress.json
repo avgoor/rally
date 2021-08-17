@@ -1,4 +1,4 @@
-{% set concurrency = 10 %}
+{% set concurrency = 50 %}
 {% set ops_times = 100 %}
 {% set validate_times = 1000 %}
 {% set users = 5 %}
