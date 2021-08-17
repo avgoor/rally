@@ -1,5 +1,5 @@
 {% set concurrency = 300 %}
-{% set times = 30000 %}
+{% set times = 3000 %}
 {% set users = 3 %}
 {% set tenants = 10 %}
 {
