@@ -6,7 +6,7 @@
 {% set users = 2 %}
 {% set tenants = 2 %}
 {
-  "NeutronTrunks.boot_server_and_add_subports": [
+  "NovaKeypair.boot_and_delete_server_with_keypair": [
   {
     "args": {
       "flavor": {
@@ -14,8 +14,7 @@
       },
       "image": {
         "name": "{{image_name}}"
-      },
-      "subport_count": 2
+      }
     },
     "runner": {
       "type": "constant",
