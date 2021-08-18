@@ -1,12 +1,12 @@
 {% set flavor_name = "m1.rmq_test" %}
 {% set image_name = image_name or "TestCirros-0.4.0" %}
 {% set availability_zone = "nova" %}
-{% set concurrency = 30 %}
-{% set times = 300 %}
+{% set concurrency = 60 %}
+{% set times = 1200 %}
 {% set users = 2 %}
 {% set tenants = 2 %}
 {
-  "NovaServers.boot_and_associate_floating_ip": [
+  "NovaServers.boot_and_delete_server": [
   {
     "args": {
       "flavor": {
