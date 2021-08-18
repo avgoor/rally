@@ -1,12 +1,12 @@
 {% set flavor_name = "m1.rmq_test" %}
 {% set image_name = image_name or "TestCirros-0.4.0" %}
 {% set availability_zone = "nova" %}
-{% set concurrency = 60 %}
-{% set times = 600 %}
-{% set users = 1 %}
-{% set tenants = 1 %}
+{% set concurrency = 30 %}
+{% set times = 300 %}
+{% set users = 2 %}
+{% set tenants = 2 %}
 {
-  "NovaServers.boot_and_delete_server": [
+  "NeutronTrunks.boot_server_and_add_subports": [
   {
     "args": {
       "flavor": {
@@ -15,8 +15,7 @@
       "image": {
         "name": "{{image_name}}"
       },
-      "auto_assign_nic": true,
-      "availability_zone": "{{availability_zone}}"
+      "subport_count": 2
     },
     "runner": {
       "type": "constant",
