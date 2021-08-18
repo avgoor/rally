@@ -14,7 +14,9 @@
       },
       "image": {
         "name": "{{image_name}}"
-      }
+      },
+      "auto_assign_nic": true,
+      "availability_zone": "{{availability_zone}}"
     },
     "runner": {
       "type": "constant",
