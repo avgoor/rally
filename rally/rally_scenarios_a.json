@@ -6,7 +6,7 @@
 {% set users = 2 %}
 {% set tenants = 2 %}
 {
-  "NovaKeypair.boot_and_delete_server_with_keypair": [
+  "NovaServers.boot_and_associate_floating_ip": [
   {
     "args": {
       "flavor": {
