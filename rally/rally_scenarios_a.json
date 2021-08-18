@@ -25,7 +25,7 @@
     },
     "context": {
       "network": {
-        "start_cidr": "100.0.0.0/8",
+        "start_cidr": "10.230.0.0/16",
         "networks_per_tenant": 5,
         "subnets_per_network": 5
       },
