@@ -35,7 +35,8 @@ rally_configuration () {
   sed -i 's/uuid4())/uuid4()).replace("-","")/g' /usr/local/lib/python2.7/dist-packages/rally/plugins/openstack/context/keystone/users.py
   rally deployment create --fromenv --name=tempest_$sub_name
   echo "[openstack]" >> /etc/rally/rally.conf
-  echo "pre_newton_neutron=True" >> /etc/rally/rally.conf
+  #echo "pre_newton_neutron=True" >> /etc/rally/rally.conf
+  echo "nova_server_start_timeout = 900.0" >> /etc/rally/rally.conf
 }
 
 update_cacerts () {
