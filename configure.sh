@@ -37,6 +37,7 @@ rally_configuration () {
   echo "[openstack]" >> /etc/rally/rally.conf
   #echo "pre_newton_neutron=True" >> /etc/rally/rally.conf
   echo "nova_server_start_timeout = 900.0" >> /etc/rally/rally.conf
+  echo "nova_server_boot_timeout = 900.0" >> /etc/rally/rally.conf
 }
 
 update_cacerts () {
