@@ -3,8 +3,8 @@
 {% set availability_zone = "nova" %}
 {% set concurrency = 200 %}
 {% set times = 10000 %}
-{% set users = 30 %}
-{% set tenants = 50 %}
+{% set users = 1 %}
+{% set tenants = 1 %}
 {
   "NovaServers.boot_and_update_server": [
   {
