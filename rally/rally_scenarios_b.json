@@ -1,7 +1,7 @@
 {% set concurrency = 4000 %}
-{% set times = 100000 %}
-{% set users = 3 %}
-{% set tenants = 10 %}
+{% set times = 40000 %}
+{% set users = 5 %}
+{% set tenants = 100 %}
 {
   "NeutronNetworks.create_and_delete_networks": [
   {
