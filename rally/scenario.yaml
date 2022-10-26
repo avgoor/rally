@@ -1,16 +1,28 @@
 ---
-  GlanceImages.list_images:
-    - 
+  NeutronNetworks.create_and_update_routers:
+    -
+      args:
+        network_create_args: {}
+        subnet_create_args: {}
+        subnet_cidr_start: "1.1.0.0/30"
+        subnets_per_network: 2
+        router_create_args: {}
+        router_update_args:
+            admin_state_up: False
       runner:
         type: "constant"
-        times: {{iterations}}
-        concurrency: {{number_of_concurrent_scenarios}}
+        times: 40000
+        concurrency: 4000
       context:
+        network: {}
         users:
-          tenants: {{number_of_tenants}}
-          users_per_tenant: {{users_per_tenant}}
-        images:
-          image_url: {{glance_image_location}}
-          image_type: "qcow2"
-          image_container: "bare"
-          images_per_tenant: {{glance_images_per_tenant_before_benchmarking}}
+          tenants: 10
+          users_per_tenant: 5
+        quotas:
+          neutron:
+            network: -1
+            subnet: -1
+            router: -1
+      sla:
+        failure_rate:
+          max: 20
