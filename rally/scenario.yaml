@@ -12,7 +12,7 @@
       runner:
         type: "constant"
         times: 6000
-        concurrency: 2000
+        concurrency: 200
       context:
         network: {}
         users:
