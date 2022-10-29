@@ -11,8 +11,8 @@
             admin_state_up: False
       runner:
         type: "constant"
-        times: 6000
-        concurrency: 300
+        times: 2500
+        concurrency: 250
       context:
         network: {}
         users:
